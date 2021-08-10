@@ -41,9 +41,9 @@ DOMAIN-SUFFIX,webrtc.org,Google
 DOMAIN-SUFFIX,whatbrowser.org,Google
 DOMAIN-SUFFIX,widevine.com,Google
 DOMAIN-SUFFIX,x.company,Google
-;DOMAIN-SUFFIX,youtu.be,Google
-;DOMAIN-SUFFIX,yt.be,Google
-;DOMAIN-SUFFIX,ytimg.com,Google
+DOMAIN-SUFFIX,youtu.be,Google
+DOMAIN-SUFFIX,yt.be,Google
+DOMAIN-SUFFIX,ytimg.com,Google
 # (DNS Cache Pollution Protection)
 DOMAIN-SUFFIX,appspot.com,Google
 DOMAIN-SUFFIX,blogger.com,Google
