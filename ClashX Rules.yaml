@@ -1,1 +1,87 @@
+#
+- DOMAIN-KEYWORD,figma,Proxy
+- DOMAIN-KEYWORD,wix,Proxy
+- DOMAIN-KEYWORD,figma,Proxy
+- DOMAIN-KEYWORD,icloud,Domestic
+- DOMAIN,icloud,Domestic
+- DOMAIN-HOST,gateway.icloud.com:443,Domestic
+- DOMAIN-SUFFIX,gateway.icloud.com,Domestic
+- DOMAIN-SUFFIX,metrics.icloud.com,Domestic
 
+# iCloud 上传和下载
+DOMAIN-SUFFIX, icloud-content.com, Deomestic
+DOMAIN-SUFFIX, me.com, Deomestic
+DOMAIN-SUFFIX, apple.com, Deomestic
+DOMAIN-SUFFIX, icloud.com, Deomestic
+DOMAIN-SUFFIX, apple-cloudkit.com, Deomestic
+
+# Apple 直连
+#
+USER-AGENT,*com.apple.mobileme.fmip1,DIRECT
+# Weather
+USER-AGENT,*WeatherFoundation*,DIRECT
+DOMAIN,weather-data.apple.com,DIRECT
+# Maps
+USER-AGENT,%E5%9C%B0%E5%9B%BE*,DIRECT
+# Settings
+USER-AGENT,%E8%AE%BE%E7%BD%AE*,DIRECT
+USER-AGENT,com.apple.geod*,DIRECT
+USER-AGENT,com.apple.Maps,DIRECT
+USER-AGENT,FindMyFriends*,DIRECT
+USER-AGENT,FindMyiPhone*,DIRECT
+USER-AGENT,FMDClient*,DIRECT
+USER-AGENT,FMFD*,DIRECT
+USER-AGENT,fmflocatord*,DIRECT
+USER-AGENT,geod*,DIRECT
+USER-AGENT,locationd*,DIRECT
+USER-AGENT,Maps*,DIRECT
+
+#
+# 一些 com.apple.appstored* 会连接的 API（优先级高）
+#
+DOMAIN,guzzoni.apple.com,DIRECT
+DOMAIN,apps.apple.com,DIRECT
+DOMAIN,xp.apple.com,DIRECT
+DOMAIN,bag.itunes.apple.com,DIRECT
+DOMAIN,api-edge.apps.apple.com,DIRECT
+DOMAIN,api.apps.apple.com,DIRECT
+DOMAIN,play.itunes.apple.com,DIRECT
+DOMAIN,se.itunes.apple.com,DIRECT
+DOMAIN,se-edge.itunes.apple.com,DIRECT
+DOMAIN,su.itunes.apple.com,DIRECT
+DOMAIN,upp.itunes.apple.com,DIRECT
+DOMAIN,beta.music.apple.com,DIRECT
+DOMAIN-KEYWORD,buy.itunes.apple.com,DIRECT
+DOMAIN-SUFFIX,itunes-apple.com.akadns.net,DIRECT
+
+#
+# Apple Global CDN
+#
+# iOS App Store
+DOMAIN,iosapps.itunes.apple.com,DIRECT
+# Mac App Store
+DOMAIN,osxapps.itunes.apple.com,DIRECT
+DOMAIN,oscdn.apple.com,DIRECT
+# Update
+DOMAIN,supportdownload.apple.com,DIRECT
+# Update
+DOMAIN,appldnld.apple.com,DIRECT
+# Update
+DOMAIN,swcdn.apple.com,DIRECT
+DOMAIN,apptrailers.itunes.apple.com,DIRECT
+DOMAIN,updates-http.cdn-apple.com,DIRECT
+DOMAIN,updates.cdn-apple.com,DIRECT
+# App Store & iTunes Images
+DOMAIN-SUFFIX,mzstatic.com,DIRECT
+# Mac App Store
+PROCESS-NAME,storedownloadd,DIRECT
+# iOS App Store
+USER-AGENT,com.apple.appstored*,DIRECT
+# Apple Music Streaming
+DOMAIN,aod.itunes.apple.com,DIRECT
+DOMAIN,mvod.itunes.apple.com,DIRECT
+DOMAIN,streamingaudio.itunes.apple.com,DIRECT
+# Other
+DOMAIN,download.developer.apple.com,DIRECT
+DOMAIN,downloaddispatch.itunes.apple.com,DIRECT
+DOMAIN,app-site-association.cdn-apple.com,DIRECT
