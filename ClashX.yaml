@@ -1,40 +1,45 @@
-# 规则
 - DOMAIN-KEYWORD,figma,Proxy
+- DOMAIN-SUFFIX,figma,Proxy
 - DOMAIN-KEYWORD,wix,Proxy
-- DOMAIN-KEYWORD,figma,Proxy
 - DOMAIN-KEYWORD,icloud,Domestic
 - DOMAIN,icloud,Domestic
-- DOMAIN-HOST,gateway.icloud.com:443,Domestic
 - DOMAIN-SUFFIX,gateway.icloud.com,Domestic
 - DOMAIN-SUFFIX,metrics.icloud.com,Domestic
 
+# Dribbble
+- DOMAIN-KEYWORD,dribbble,Proxy
+- DOMAIN,www.dribbble.com,Proxy
+- DOMAIN-SUFFIX,cdn.dribbble.com,Proxy
+- DOMAIN-SUFFIX,t.dribbble.com,Proxy
+
+
 # iCloud 上传和下载
-- DOMAIN-SUFFIX, icloud-content.com, Deomestic
-- DOMAIN-SUFFIX, me.com, Deomestic
-- DOMAIN-SUFFIX, apple.com, Deomestic
-- DOMAIN-SUFFIX, icloud.com, Deomestic
-- DOMAIN-SUFFIX, apple-cloudkit.com, Deomestic
+- DOMAIN-SUFFIX,icloud-content.com,Domestic
+- DOMAIN-SUFFIX,me.com,Domestic
+- DOMAIN-SUFFIX,apple.com,Domestic
+- DOMAIN-SUFFIX,icloud.com,Domestic
+- DOMAIN-SUFFIX,apple-cloudkit.com,Domestic
 
 # Apple 直连
 #
-- USER-AGENT,*com.apple.mobileme.fmip1,DIRECT
+- DOMAIN-SUFFIX,*com.apple.mobileme.fmip1,DIRECT
 # Weather
-- USER-AGENT,*WeatherFoundation*,DIRECT
+- DOMAIN-SUFFIX,*WeatherFoundation*,DIRECT
 - DOMAIN,weather-data.apple.com,DIRECT
 # Maps
-- USER-AGENT,%E5%9C%B0%E5%9B%BE*,DIRECT
+- DOMAIN-SUFFIX,%E5%9C%B0%E5%9B%BE*,DIRECT
 # Settings
-- USER-AGENT,%E8%AE%BE%E7%BD%AE*,DIRECT
-- USER-AGENT,com.apple.geod*,DIRECT
-- USER-AGENT,com.apple.Maps,DIRECT
-- USER-AGENT,FindMyFriends*,DIRECT
-- USER-AGENT,FindMyiPhone*,DIRECT
-- USER-AGENT,FMDClient*,DIRECT
-- USER-AGENT,FMFD*,DIRECT
-- USER-AGENT,fmflocatord*,DIRECT
-- USER-AGENT,geod*,DIRECT
-- USER-AGENT,locationd*,DIRECT
-- USER-AGENT,Maps*,DIRECT
+- DOMAIN-SUFFIX,%E8%AE%BE%E7%BD%AE*,DIRECT
+- DOMAIN-SUFFIX,com.apple.geod*,DIRECT
+- DOMAIN-SUFFIX,com.apple.Maps,DIRECT
+- DOMAIN-SUFFIX,FindMyFriends*,DIRECT
+- DOMAIN-SUFFIX,FindMyiPhone*,DIRECT
+- DOMAIN-SUFFIX,FMDClient*,DIRECT
+- DOMAIN-SUFFIX,FMFD*,DIRECT
+- DOMAIN-SUFFIX,fmflocatord*,DIRECT
+- DOMAIN-SUFFIX,geod*,DIRECT
+- DOMAIN-SUFFIX,locationd*,DIRECT
+- DOMAIN-SUFFIX,Maps*,DIRECT
 
 #
 # 一些 com.apple.appstored* 会连接的 API（优先级高）
@@ -76,7 +81,7 @@
 # Mac App Store
 - PROCESS-NAME,storedownloadd,DIRECT
 # iOS App Store
-- USER-AGENT,com.apple.appstored*,DIRECT
+- DOMAIN-SUFFIX,com.apple.appstored*,DIRECT
 # Apple Music Streaming
 - DOMAIN,aod.itunes.apple.com,DIRECT
 - DOMAIN,mvod.itunes.apple.com,DIRECT
@@ -106,12 +111,12 @@
 - DOMAIN-SUFFIX,apple-dns.net,DIRECT
 # OCSP
 - DOMAIN-SUFFIX,ocsp.apple.com,DIRECT
-- USER-AGENT,com.apple.trustd*,DIRECT
+- DOMAIN-SUFFIX,com.apple.trustd*,DIRECT
 
 #
 # Apple News
 #
-- USER-AGENT,AppleNews*,DIRECT
+- DOMAIN-SUFFIX,AppleNews*,DIRECT
 - DOMAIN-SUFFIX,apple.news,DIRECT
 - DOMAIN,news-events.apple.com,DIRECT
 - DOMAIN,news-edge.apple.com,DIRECT
@@ -128,8 +133,8 @@
 # Apple Pay
 - DOMAIN,smp-device-content.apple.com,DIRECT
 - DOMAIN-KEYWORD,smp-device,DIRECT
-- USER-AGENT,passd*,DIRECT
-- USER-AGENT,Wallet*,DIRECT
+- DOMAIN-SUFFIX,passd*,DIRECT
+- DOMAIN-SUFFIX,Wallet*,DIRECT
 # locationd
 - DOMAIN,gs-loc.apple.com,DIRECT
 - DOMAIN-SUFFIX,ls.apple.com.akadns.net,DIRECT
@@ -172,13 +177,13 @@
 - DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
 
 # icloud
-- DOMAIN-SUFFIX,findmyiphoneonline.com,Deomestic
-- DOMAIN-SUFFIX,cl.ly, Deomestic
-- DOMAIN-SUFFIX,appletoolbox.com,Deomestic
-- DOMAIN-SUFFIX,trendblog.net,Deomestic
-- DOMAIN-SUFFIX,icloudsignin.net,Deomestic
-- DOMAIN-SUFFIX,macreports.com,Deomestic
-- DOMAIN-SUFFIX,iphonephotographyschool.com, Deomestic
-- DOMAIN-SUFFIX,usell.com,Deomestic
-- DOMAIN-SUFFIX,skydocu.com,Deomestic
-- DOMAIN-SUFFIX,intego.com,Deomestic
+- DOMAIN-SUFFIX,findmyiphoneonline.com,Domestic
+- DOMAIN-SUFFIX,cl.ly,Domestic
+- DOMAIN-SUFFIX,appletoolbox.com,Domestic
+- DOMAIN-SUFFIX,trendblog.net,Domestic
+- DOMAIN-SUFFIX,icloudsignin.net,Domestic
+- DOMAIN-SUFFIX,macreports.com,Domestic
+- DOMAIN-SUFFIX,iphonephotographyschool.com, Domestic
+- DOMAIN-SUFFIX,usell.com,Domestic
+- DOMAIN-SUFFIX,skydocu.com,Domestic
+- DOMAIN-SUFFIX,intego.com,Domestic
