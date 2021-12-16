@@ -1,7 +1,8 @@
-- DOMAIN-KEYWORD,figma,Proxy
 - DOMAIN-SUFFIX,figma,Proxy
 - DOMAIN-KEYWORD,wix,Proxy
+- DOMAIN-KEYWORD,tw,Proxy
 - DOMAIN-KEYWORD,icloud,Domestic
+- DOMAIN-KEYWORD,adobe,Proxy
 - DOMAIN,icloud,Domestic
 - DOMAIN-SUFFIX,gateway.icloud.com,Domestic
 - DOMAIN-SUFFIX,metrics.icloud.com,Domestic
