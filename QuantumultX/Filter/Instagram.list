@@ -1,4 +1,5 @@
-i.instagram.com
-graph.facebook.com
-edge-mqtt.facebook.com
-gateway.facebook.com
+# > Instagram
+DOMAIN-SUFFIX,i.instagram.com
+DOMAIN-SUFFIX,graph.facebook.com
+DOMAIN-SUFFIX,edge-mqtt.facebook.com
+DOMAIN-SUFFIX,gateway.facebook.com
