@@ -1,0 +1,7 @@
+# > News
+HOST-SUFFIX,news-edge.apple.com,US
+HOST-SUFFIX,news-events.apple.com,US
+HOST-SUFFIX,apple.comscoreresearch.com,US
+
+# News+ Audio
+HOST-SUFFIX,news-assets.apple.com,US
